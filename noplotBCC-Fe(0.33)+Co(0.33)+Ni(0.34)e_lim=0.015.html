@@ -1,0 +1,967 @@
+<table border="1" class="dataframe" id="myTable2">
+  <thead>
+    <tr style="text-align: center;">
+      <th></th>
+      <th onclick="sortTable(0)">material ID</th>
+      <th onclick="sortTable(1)">oxide</th>
+      <th onclick="sortTable(2)">e_above_hull (eV)</th>
+      <th onclick="sortTable(3)">form. energy / atom (eV/atom)</th>
+      <th onclick="sortTable(4)">space-group</th>
+      <th onclick="sortTable(5)">v_mox_ratio</th>
+      <th onclick="sortTable(6)">atomic % of O in oxide</th>
+      <th onclick="sortTable(7)">band gap</th>
+      <th onclick="sortTable2(8)">alloy orientation</th>
+      <th onclick="sortTable2(9)">oxide orientation</th>
+      <th onclick="sortTable(10)">misfit strain (norm)</th>
+      <th onclick="sortTable(11)">min. coincident area</th>
+      <th onclick="sortTable(12)">similar ICSD structure IDs</th>    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>48</th>
+      <td><a href="https://materialsproject.org/materials/mp-1283043" target="_blank">mp-1283043</a></td>
+      <td>CoO2</td>
+      <td>0.007579</td>
+      <td>-1.073220</td>
+      <td>P6_3/mmc</td>
+      <td>3.171284</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>0 1 1</td>
+      <td>0.009766</td>
+      <td>32.098462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td><a href="http://oqmd.org/materials/entry/4562" target="_blank">oqmd-4562</a></td>
+      <td>Co3O4</td>
+      <td>0.000000</td>
+      <td>-1.343081</td>
+      <td>Fd-3m</td>
+      <td>1.940207</td>
+      <td>57.14</td>
+      <td>1.7960</td>
+      <td>1 0 0</td>
+      <td>1 0 -1</td>
+      <td>0.013326</td>
+      <td>32.547442</td>
+      <td>{24210}</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td><a href="https://materialsproject.org/materials/mp-32686" target="_blank">mp-32686</a></td>
+      <td>CoO2</td>
+      <td>0.008335</td>
+      <td>-1.072464</td>
+      <td>P-3m1</td>
+      <td>2.981353</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>0 1 1</td>
+      <td>0.021526</td>
+      <td>38.980779</td>
+      <td>{26763, 53994, 88722}</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td><a href="https://materialsproject.org/materials/mp-1272749" target="_blank">mp-1272749</a></td>
+      <td>CoO2</td>
+      <td>0.006609</td>
+      <td>-1.074190</td>
+      <td>R-3m</td>
+      <td>4.268156</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>0 0 1</td>
+      <td>0.013677</td>
+      <td>39.342687</td>
+      <td>{20566}</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td><a href="http://oqmd.org/materials/entry/1219293" target="_blank">oqmd-1219293</a></td>
+      <td>CoO</td>
+      <td>0.000000</td>
+      <td>-1.254691</td>
+      <td>F-43m</td>
+      <td>2.129886</td>
+      <td>50.00</td>
+      <td>0.8730</td>
+      <td>1 0 0</td>
+      <td>1 1 0</td>
+      <td>0.034387</td>
+      <td>41.958003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td><a href="http://oqmd.org/materials/entry/1219293" target="_blank">oqmd-1219293</a></td>
+      <td>CoO</td>
+      <td>0.000000</td>
+      <td>-1.254691</td>
+      <td>F-43m</td>
+      <td>2.129886</td>
+      <td>50.00</td>
+      <td>0.8730</td>
+      <td>1 1 0</td>
+      <td>1 0 -1</td>
+      <td>0.010461</td>
+      <td>44.503183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td><a href="https://materialsproject.org/materials/mp-1272749" target="_blank">mp-1272749</a></td>
+      <td>CoO2</td>
+      <td>0.006609</td>
+      <td>-1.074190</td>
+      <td>R-3m</td>
+      <td>4.268156</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>0 1 -1</td>
+      <td>0.006960</td>
+      <td>45.427633</td>
+      <td>{20566}</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td><a href="http://oqmd.org/materials/entry/4562" target="_blank">oqmd-4562</a></td>
+      <td>Co3O4</td>
+      <td>0.000000</td>
+      <td>-1.343081</td>
+      <td>Fd-3m</td>
+      <td>1.940207</td>
+      <td>57.14</td>
+      <td>1.7960</td>
+      <td>1 1 0</td>
+      <td>1 1 -1</td>
+      <td>0.013326</td>
+      <td>46.029033</td>
+      <td>{24210}</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://materialsproject.org/materials/mp-656887" target="_blank">mp-656887</a></td>
+      <td>Ni3O4</td>
+      <td>0.000000</td>
+      <td>-1.046750</td>
+      <td>Cmmm</td>
+      <td>2.103674</td>
+      <td>57.14</td>
+      <td>0.3954</td>
+      <td>1 0 0</td>
+      <td>0 1 1</td>
+      <td>0.032038</td>
+      <td>47.581173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td><a href="http://oqmd.org/materials/entry/1444447" target="_blank">oqmd-1444447</a></td>
+      <td>NiO</td>
+      <td>0.002362</td>
+      <td>-1.239151</td>
+      <td>P-1</td>
+      <td>1.605037</td>
+      <td>50.00</td>
+      <td>2.7010</td>
+      <td>1 1 1</td>
+      <td>1 0 0</td>
+      <td>0.036150</td>
+      <td>52.632568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td><a href="http://oqmd.org/materials/entry/1443263" target="_blank">oqmd-1443263</a></td>
+      <td>NiO</td>
+      <td>0.001249</td>
+      <td>-1.240264</td>
+      <td>C2/c</td>
+      <td>1.609252</td>
+      <td>50.00</td>
+      <td>2.6160</td>
+      <td>1 1 1</td>
+      <td>0 0 1</td>
+      <td>0.034501</td>
+      <td>52.738285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td><a href="http://oqmd.org/materials/entry/1104525" target="_blank">oqmd-1104525</a></td>
+      <td>NiO</td>
+      <td>0.001198</td>
+      <td>-1.240315</td>
+      <td>Fm-3m</td>
+      <td>1.609782</td>
+      <td>50.00</td>
+      <td>2.6190</td>
+      <td>1 1 1</td>
+      <td>1 1 1</td>
+      <td>0.034162</td>
+      <td>52.762324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td><a href="http://oqmd.org/materials/entry/1442025" target="_blank">oqmd-1442025</a></td>
+      <td>NiO</td>
+      <td>0.000929</td>
+      <td>-1.240584</td>
+      <td>I4/mmm</td>
+      <td>1.611358</td>
+      <td>50.00</td>
+      <td>2.6960</td>
+      <td>1 1 1</td>
+      <td>1 0 0</td>
+      <td>0.033697</td>
+      <td>52.796815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td><a href="http://oqmd.org/materials/entry/13807" target="_blank">oqmd-13807</a></td>
+      <td>NiO</td>
+      <td>0.000127</td>
+      <td>-1.241386</td>
+      <td>C2/m</td>
+      <td>1.615843</td>
+      <td>50.00</td>
+      <td>2.6100</td>
+      <td>1 1 1</td>
+      <td>1 1 -1</td>
+      <td>0.031861</td>
+      <td>52.927492</td>
+      <td>{76670}</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td><a href="http://oqmd.org/materials/entry/8206" target="_blank">oqmd-8206</a></td>
+      <td>NiO</td>
+      <td>0.000000</td>
+      <td>-1.241513</td>
+      <td>R-3m</td>
+      <td>1.616659</td>
+      <td>50.00</td>
+      <td>2.6110</td>
+      <td>1 1 1</td>
+      <td>1 1 -1</td>
+      <td>0.031242</td>
+      <td>52.970981</td>
+      <td>{43740}</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href="https://materialsproject.org/materials/mp-19009" target="_blank">mp-19009</a></td>
+      <td>NiO</td>
+      <td>0.000000</td>
+      <td>-1.218085</td>
+      <td>Fm-3m</td>
+      <td>1.661773</td>
+      <td>50.00</td>
+      <td>2.4141</td>
+      <td>1 1 1</td>
+      <td>0 0 1</td>
+      <td>0.017884</td>
+      <td>53.946939</td>
+      <td>{9866, 24014, 24018, 28834, 28910, 43740, 53930, 53931, 61318, 61324, 61544, 76640, 76669, 76670, 76959, 92127, 92128, 92129, 92130, 92131, 92132, 92133, 166115, 166118, 166122, 182948, 184626, 184918, 246910, 646096, 646098, 646099}</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td><a href="https://materialsproject.org/materials/mp-1283043" target="_blank">mp-1283043</a></td>
+      <td>CoO2</td>
+      <td>0.007579</td>
+      <td>-1.073220</td>
+      <td>P6_3/mmc</td>
+      <td>3.171284</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>0 0 1</td>
+      <td>0.012284</td>
+      <td>55.590418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://materialsproject.org/materials/mp-754748" target="_blank">mp-754748</a></td>
+      <td>CoO2</td>
+      <td>0.005799</td>
+      <td>-1.075000</td>
+      <td>Aem2</td>
+      <td>3.270931</td>
+      <td>66.67</td>
+      <td>1.1551</td>
+      <td>1 0 0</td>
+      <td>0 1 0</td>
+      <td>0.003689</td>
+      <td>55.621687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td><a href="https://materialsproject.org/materials/mp-32686" target="_blank">mp-32686</a></td>
+      <td>CoO2</td>
+      <td>0.008335</td>
+      <td>-1.072464</td>
+      <td>P-3m1</td>
+      <td>2.981353</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>0 0 1</td>
+      <td>0.011312</td>
+      <td>55.684883</td>
+      <td>{26763, 53994, 88722}</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href="https://materialsproject.org/materials/mp-1272680" target="_blank">mp-1272680</a></td>
+      <td>CoO2</td>
+      <td>0.014164</td>
+      <td>-1.066635</td>
+      <td>C2/m</td>
+      <td>2.994730</td>
+      <td>66.67</td>
+      <td>1.2544</td>
+      <td>1 1 0</td>
+      <td>0 0 1</td>
+      <td>0.014875</td>
+      <td>55.722288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td><a href="https://materialsproject.org/materials/mp-1296922" target="_blank">mp-1296922</a></td>
+      <td>CoO2</td>
+      <td>0.012461</td>
+      <td>-1.068338</td>
+      <td>P-1</td>
+      <td>2.992288</td>
+      <td>66.67</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>0 0 1</td>
+      <td>0.036067</td>
+      <td>56.348388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td><a href="http://oqmd.org/materials/entry/1442032" target="_blank">oqmd-1442032</a></td>
+      <td>FeO</td>
+      <td>0.012156</td>
+      <td>-1.530873</td>
+      <td>Immm</td>
+      <td>1.825040</td>
+      <td>50.00</td>
+      <td>1.0840</td>
+      <td>1 1 1</td>
+      <td>1 0 -1</td>
+      <td>0.033710</td>
+      <td>58.073797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td><a href="http://oqmd.org/materials/entry/1442500" target="_blank">oqmd-1442500</a></td>
+      <td>FeO</td>
+      <td>0.000000</td>
+      <td>-1.543029</td>
+      <td>P3121</td>
+      <td>1.835267</td>
+      <td>50.00</td>
+      <td>1.5860</td>
+      <td>1 1 1</td>
+      <td>0 0 1</td>
+      <td>0.034411</td>
+      <td>58.140781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td><a href="http://oqmd.org/materials/entry/1439717" target="_blank">oqmd-1439717</a></td>
+      <td>NiO2</td>
+      <td>0.000348</td>
+      <td>-0.894722</td>
+      <td>Pnnm</td>
+      <td>2.408455</td>
+      <td>66.67</td>
+      <td>2.3780</td>
+      <td>1 0 0</td>
+      <td>0 1 1</td>
+      <td>0.003980</td>
+      <td>63.532480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td><a href="http://oqmd.org/materials/entry/1344039" target="_blank">oqmd-1344039</a></td>
+      <td>NiO</td>
+      <td>0.003042</td>
+      <td>-1.238471</td>
+      <td>C2/c</td>
+      <td>1.603064</td>
+      <td>50.00</td>
+      <td>2.4940</td>
+      <td>1 0 0</td>
+      <td>1 0 1</td>
+      <td>0.026918</td>
+      <td>69.294949</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td><a href="http://oqmd.org/materials/entry/1473745" target="_blank">oqmd-1473745</a></td>
+      <td>NiO</td>
+      <td>0.003012</td>
+      <td>-1.238501</td>
+      <td>Pmmn</td>
+      <td>1.603374</td>
+      <td>50.00</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>1 0 1</td>
+      <td>0.025619</td>
+      <td>69.354544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td><a href="http://oqmd.org/materials/entry/1387128" target="_blank">oqmd-1387128</a></td>
+      <td>Fe2CoO4</td>
+      <td>0.003591</td>
+      <td>-1.638735</td>
+      <td>I41/amd</td>
+      <td>2.192473</td>
+      <td>57.14</td>
+      <td>0.6750</td>
+      <td>1 0 0</td>
+      <td>1 1 -1</td>
+      <td>0.012251</td>
+      <td>70.627957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td><a href="http://oqmd.org/materials/entry/21123" target="_blank">oqmd-21123</a></td>
+      <td>Fe2CoO4</td>
+      <td>0.000000</td>
+      <td>-1.642327</td>
+      <td>Fd-3m</td>
+      <td>2.220827</td>
+      <td>57.14</td>
+      <td>0.6890</td>
+      <td>1 0 0</td>
+      <td>1 0 -1</td>
+      <td>0.006179</td>
+      <td>71.229178</td>
+      <td>{166200}</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://materialsproject.org/materials/mp-35596" target="_blank">mp-35596</a></td>
+      <td>Fe2NiO4</td>
+      <td>0.000000</td>
+      <td>-1.591045</td>
+      <td>Imma</td>
+      <td>2.224443</td>
+      <td>57.14</td>
+      <td>1.4208</td>
+      <td>1 0 0</td>
+      <td>1 1 0</td>
+      <td>0.005794</td>
+      <td>71.275315</td>
+      <td>{182237}</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td><a href="https://materialsproject.org/materials/mp-19306" target="_blank">mp-19306</a></td>
+      <td>Fe3O4</td>
+      <td>0.013059</td>
+      <td>-1.629588</td>
+      <td>Fd-3m</td>
+      <td>2.295485</td>
+      <td>57.14</td>
+      <td>0.0001</td>
+      <td>1 0 0</td>
+      <td>1 0 1</td>
+      <td>0.009848</td>
+      <td>72.817407</td>
+      <td>{5247, 20596, 26410, 27898, 27899, 28664, 29129, 30860, 31157, 35000, 35001, 35003, 36314, 43001, 44525, 49549, 50567, 56120, 65339, 65340, 65341, 75627, 77588, 77589, 77590, 77591, 77592, 82234, 82237, 84098, 84611, 85177, 85806, 85807, 92356, 96012, 98085, 98087, 98088, 157689, 158504, 158505, 158506, 158583, 158740, 158741, 158742, 158743, 158744, 158745, 158746, 159959, 159961, 159963, 159964, 159967, 159969, 159971, 159973, 159974, 159975, 159976, 162349, 165105, 183969, 183970, 183971, 183972, 183973, 183974, 183975, 183976, 183977, 195701, 195702, 195703, 195704, 195705, 195706, 195708, 195709, 195710, 195711, 195712, 195713, 195714, 195715, 195716, 195717, 246895, 249047, 252266, 252267, 261820, 263007, 263008, 263009, 633018, 633020, 633041}</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://materialsproject.org/materials/mp-31770" target="_blank">mp-31770</a></td>
+      <td>Fe3O4</td>
+      <td>0.014707</td>
+      <td>-1.627941</td>
+      <td>Imma</td>
+      <td>2.317738</td>
+      <td>57.14</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>1 0 1</td>
+      <td>0.015980</td>
+      <td>72.926862</td>
+      <td>{31156}</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td><a href="http://oqmd.org/materials/entry/1362615" target="_blank">oqmd-1362615</a></td>
+      <td>Fe3O4</td>
+      <td>0.000000</td>
+      <td>-1.660711</td>
+      <td>I41/amd</td>
+      <td>2.260210</td>
+      <td>57.14</td>
+      <td>0.7150</td>
+      <td>1 0 0</td>
+      <td>1 1 -1</td>
+      <td>0.013738</td>
+      <td>73.275255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td><a href="http://oqmd.org/materials/entry/1439999" target="_blank">oqmd-1439999</a></td>
+      <td>FeO</td>
+      <td>0.002690</td>
+      <td>-1.540339</td>
+      <td>Pnma</td>
+      <td>1.838379</td>
+      <td>50.00</td>
+      <td>1.1770</td>
+      <td>1 0 0</td>
+      <td>0 1 0</td>
+      <td>0.021672</td>
+      <td>74.046314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href="http://oqmd.org/materials/entry/4149" target="_blank">mvc-14149</a></td>
+      <td>CoO2</td>
+      <td>0.000000</td>
+      <td>-1.080799</td>
+      <td>I4/m</td>
+      <td>2.873633</td>
+      <td>66.67</td>
+      <td>0.5902</td>
+      <td>1 1 0</td>
+      <td>1 -1 0</td>
+      <td>0.019088</td>
+      <td>77.222173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href="https://materialsproject.org/materials/mp-1283030" target="_blank">mp-1283030</a></td>
+      <td>FeO</td>
+      <td>0.014062</td>
+      <td>-1.467464</td>
+      <td>C2/c</td>
+      <td>1.902442</td>
+      <td>50.00</td>
+      <td>1.7989</td>
+      <td>1 0 0</td>
+      <td>1 1 1</td>
+      <td>0.032478</td>
+      <td>78.845252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td><a href="https://materialsproject.org/materials/mp-715262" target="_blank">mp-715262</a></td>
+      <td>FeO</td>
+      <td>0.009280</td>
+      <td>-1.472246</td>
+      <td>I4/mmm</td>
+      <td>1.896493</td>
+      <td>50.00</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>1 -1 1</td>
+      <td>0.024896</td>
+      <td>82.697295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://materialsproject.org/materials/mp-19128" target="_blank">mp-19128</a></td>
+      <td>CoO</td>
+      <td>0.000413</td>
+      <td>-1.283968</td>
+      <td>P6_3mc</td>
+      <td>2.164163</td>
+      <td>50.00</td>
+      <td>0.7067</td>
+      <td>1 0 0</td>
+      <td>0 0 1</td>
+      <td>0.017219</td>
+      <td>86.460769</td>
+      <td>{43458}</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="https://materialsproject.org/materials/mp-22408" target="_blank">mp-22408</a></td>
+      <td>CoO</td>
+      <td>0.000000</td>
+      <td>-1.284381</td>
+      <td>F-43m</td>
+      <td>2.155547</td>
+      <td>50.00</td>
+      <td>0.8425</td>
+      <td>1 1 0</td>
+      <td>1 1 0</td>
+      <td>0.005799</td>
+      <td>89.634815</td>
+      <td>{29082}</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td><a href="http://oqmd.org/materials/entry/1442250" target="_blank">oqmd-1442250</a></td>
+      <td>CoO</td>
+      <td>0.013658</td>
+      <td>-1.241033</td>
+      <td>P42/mnm</td>
+      <td>2.193683</td>
+      <td>50.00</td>
+      <td>0.8810</td>
+      <td>1 1 0</td>
+      <td>1 0 0</td>
+      <td>0.040919</td>
+      <td>90.193108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href="https://materialsproject.org/materials/mp-1279742" target="_blank">mp-1279742</a></td>
+      <td>FeO</td>
+      <td>0.000000</td>
+      <td>-1.481526</td>
+      <td>C2/m</td>
+      <td>1.883819</td>
+      <td>50.00</td>
+      <td>2.3029</td>
+      <td>1 0 0</td>
+      <td>1 1 0</td>
+      <td>0.034263</td>
+      <td>96.823550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td><a href="https://materialsproject.org/materials/mp-1279343" target="_blank">mp-1279343</a></td>
+      <td>CoNiO3</td>
+      <td>0.000367</td>
+      <td>-1.141305</td>
+      <td>P-1</td>
+      <td>2.100326</td>
+      <td>60.00</td>
+      <td>1.0203</td>
+      <td>1 1 0</td>
+      <td>1 -1 0</td>
+      <td>0.026730</td>
+      <td>104.222305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td><a href="https://materialsproject.org/materials/mp-1178424" target="_blank">mp-1178424</a></td>
+      <td>CoNiO3</td>
+      <td>0.000000</td>
+      <td>-1.141672</td>
+      <td>R-3</td>
+      <td>2.109353</td>
+      <td>60.00</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>1 1 0</td>
+      <td>0.028777</td>
+      <td>105.350250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td><a href="https://materialsproject.org/materials/mp-1062939" target="_blank">mp-1062939</a></td>
+      <td>CoO2</td>
+      <td>0.008466</td>
+      <td>-1.072332</td>
+      <td>R-3m</td>
+      <td>3.169580</td>
+      <td>66.67</td>
+      <td>1.1238</td>
+      <td>1 0 0</td>
+      <td>0 1 0</td>
+      <td>0.009060</td>
+      <td>111.413688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://materialsproject.org/materials/mp-19770" target="_blank">mp-19770</a></td>
+      <td>Fe2O3</td>
+      <td>0.000000</td>
+      <td>-1.707096</td>
+      <td>R-3c</td>
+      <td>2.320028</td>
+      <td>60.00</td>
+      <td>0.0000</td>
+      <td>1 1 0</td>
+      <td>1 0 -1</td>
+      <td>0.035823</td>
+      <td>112.205498</td>
+      <td>{15840, 22505, 24004, 24791, 33643, 40142, 41541, 43465, 56372, 64599, 66756, 71194, 81248, 82134, 82135, 82136, 82137, 82902, 82903, 82904, 88417, 88418, 96069, 96070, 96071, 96072, 96073, 96074, 96075, 96076, 161283, 161284, 161285, 161286, 161287, 161288, 161289, 161290, 161291, 161292, 161293, 161294, 173653, 173655, 182839, 182840, 182841, 182842, 182843, 182844, 182845, 182846, 182847, 182848, 184766, 201096, 201097, 201098, 201099, 201100, 201101, 245851, 415251, 633032, 633039}</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td><a href="https://materialsproject.org/materials/mp-1293627" target="_blank">mp-1293627</a></td>
+      <td>Co3O4</td>
+      <td>0.000000</td>
+      <td>-1.301095</td>
+      <td>R-3m</td>
+      <td>2.138979</td>
+      <td>57.14</td>
+      <td>1.4652</td>
+      <td>1 1 1</td>
+      <td>1 1 1</td>
+      <td>0.029782</td>
+      <td>120.134049</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td><a href="http://oqmd.org/materials/entry/76263" target="_blank">oqmd-76263</a></td>
+      <td>NiO</td>
+      <td>0.002959</td>
+      <td>-1.238554</td>
+      <td>Fm-3m</td>
+      <td>1.601959</td>
+      <td>50.00</td>
+      <td>2.5340</td>
+      <td>1 1 1</td>
+      <td>1 0 0</td>
+      <td>0.024953</td>
+      <td>120.208590</td>
+      <td>{87108}</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href="https://materialsproject.org/materials/mp-640147" target="_blank">mp-640147</a></td>
+      <td>Fe(NiO2)2</td>
+      <td>0.010250</td>
+      <td>-1.308648</td>
+      <td>Fd-3m</td>
+      <td>2.162881</td>
+      <td>57.14</td>
+      <td>0.0000</td>
+      <td>1 1 1</td>
+      <td>1 1 1</td>
+      <td>0.018772</td>
+      <td>121.232592</td>
+      <td>{109150}</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td><a href="http://oqmd.org/materials/entry/22457" target="_blank">oqmd-22457</a></td>
+      <td>Fe2NiO4</td>
+      <td>0.000000</td>
+      <td>-1.550701</td>
+      <td>C2/c</td>
+      <td>2.160553</td>
+      <td>57.14</td>
+      <td>1.2330</td>
+      <td>1 1 1</td>
+      <td>1 0 0</td>
+      <td>0.018623</td>
+      <td>121.312526</td>
+      <td>{182237}</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td><a href="http://oqmd.org/materials/entry/92501" target="_blank">oqmd-92501</a></td>
+      <td>Fe2O3</td>
+      <td>0.000000</td>
+      <td>-1.649763</td>
+      <td>Ia-3</td>
+      <td>2.315284</td>
+      <td>60.00</td>
+      <td>1.0930</td>
+      <td>1 1 0</td>
+      <td>1 0 0</td>
+      <td>0.007166</td>
+      <td>125.465738</td>
+      <td>{108905}</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td><a href="http://oqmd.org/materials/entry/1280885" target="_blank">oqmd-1280885</a></td>
+      <td>NiO2</td>
+      <td>0.000000</td>
+      <td>-0.895070</td>
+      <td>Pa-3</td>
+      <td>2.316965</td>
+      <td>66.67</td>
+      <td>2.5190</td>
+      <td>1 1 0</td>
+      <td>1 1 0</td>
+      <td>0.007504</td>
+      <td>125.526444</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td><a href="https://materialsproject.org/materials/mp-754168" target="_blank">mp-754168</a></td>
+      <td>Co(NiO2)2</td>
+      <td>0.000000</td>
+      <td>-1.164579</td>
+      <td>Fd-3m</td>
+      <td>2.085607</td>
+      <td>57.14</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>1 1 0</td>
+      <td>0.004636</td>
+      <td>136.615425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td><a href="https://materialsproject.org/materials/mp-705564" target="_blank">mp-705564</a></td>
+      <td>Co23O32</td>
+      <td>0.000000</td>
+      <td>-1.283408</td>
+      <td>P1</td>
+      <td>2.164049</td>
+      <td>58.18</td>
+      <td>0.0000</td>
+      <td>1 0 0</td>
+      <td>0 0 1</td>
+      <td>0.007034</td>
+      <td>137.063782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td><a href="http://oqmd.org/materials/entry/1440966" target="_blank">oqmd-1440966</a></td>
+      <td>Fe2O3</td>
+      <td>0.012927</td>
+      <td>-1.636837</td>
+      <td>C2/c</td>
+      <td>2.276394</td>
+      <td>60.00</td>
+      <td>1.2210</td>
+      <td>1 0 0</td>
+      <td>1 0 1</td>
+      <td>0.019000</td>
+      <td>151.540578</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table><script>
+function sortTable(n) {
+var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+
+table = document.getElementById("myTable2");
+switching = true;
+dir = "asc";
+while (switching) {
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    for (i = 1; i < (rows.length - 1); i++) {
+        shouldSwitch = false;
+        x = rows[i].getElementsByTagName("TD")[n];
+        y = rows[i + 1].getElementsByTagName("TD")[n];
+                var cmpX=isNaN(parseFloat(x.innerHTML))?x.innerHTML.toLowerCase():parseFloat(x.innerHTML);
+                var cmpY=isNaN(parseFloat(y.innerHTML))?y.innerHTML.toLowerCase():parseFloat(y.innerHTML);
+cmpX=(cmpX=='-')?0:cmpX;
+cmpY=(cmpY=='-')?0:cmpY;
+        if (dir == "asc") {
+            if (cmpX > cmpY) {
+                shouldSwitch= true;
+                break;
+            }
+        } else if (dir == "desc") {
+            if (cmpX < cmpY) {
+                shouldSwitch= true;
+                break;
+            }
+        }
+    }
+    if (shouldSwitch) {
+        rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+        switching = true;
+        switchcount ++;      
+    } else {
+        if (switchcount == 0 && dir == "asc") {
+            dir = "desc";
+            switching = true;
+        }
+    }
+}
+}
+
+
+function sortTable2(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("myTable2");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.getElementsByTagName("TR");
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
